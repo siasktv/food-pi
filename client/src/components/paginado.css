@@ -1,0 +1,74 @@
+.center {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.pagination {
+    display: inline-block ;
+}
+
+.a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    transition: all .2s;
+    background-color: #fafafa;
+    margin: 0px 3px;
+}
+
+.a:hover,
+.a:focus {
+ border-color: rgba(0, 0, 0, 0.15);
+ box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+ color: rgba(0, 0, 0, 0.65);
+}
+
+.a:hover {
+ transform: translateY(-1px);
+}
+
+.a:active {
+ background-color: #F0F0F1;
+ border-color: rgba(0, 0, 0, 0.15);
+ box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+ color: rgba(0, 0, 0, 0.65);
+ transform: translateY(0);
+}
+
+
+
+/* .a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.a:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.a::after {
+    content: "";
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.a::after {
+    background-color: #23c483;
+    color: #fff;
+    
+} */

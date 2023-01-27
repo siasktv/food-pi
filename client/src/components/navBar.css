@@ -1,0 +1,38 @@
+
+
+.navBar{
+    background-color:  #f9f9f9;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.2);
+    /* padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0%; */
+    box-sizing: border-box;
+    /* position: fixed; */
+    width:100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px;
+    padding: 20px 36px;
+    text-decoration: none;
+}
+#logoFood {
+    margin-right: 20px;
+    text-decoration: none;
+}
+.img-title{
+    justify-content: center;
+}
+
+h3 {
+    font-size: 18px;
+    display: inline;
+    font-weight: bold;
+    
+  }
+  
