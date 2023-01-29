@@ -210,8 +210,6 @@ router.get('/recipes/:id', async (req, res) => {
   })
 
 
-
-  //delete, update --------sequalize methods, axios methods 
   //detalle------? db editar --------- form crear receta = update 
 
 module.exports = router;
