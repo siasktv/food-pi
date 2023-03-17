@@ -64,11 +64,14 @@ export function filterCreated(payload) {
 export function getNameRecipes(name) {
   return async function (dispatch) {
     try {
-      var json = await axios.get(`${url}/recipes?name=` + name, {
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-        },
-      })
+      var json = await axios.get(
+        'https://food-pi-production-a75b.up.railway.app/recipes?name=' + name,
+        {
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+          },
+        }
+      )
       return dispatch({
         type: 'GET_NAME_RECIPES',
         payload: json.data,
