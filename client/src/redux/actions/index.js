@@ -5,7 +5,11 @@ import url from '../api'
 export function getAllRecipes() {
   return async (dispatch) => {
     try {
-      const response = await axios.get(`${url}/recipes`)
+      const response = await axios.get(`${url}/recipes`, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+      })
       console.log(response)
       return dispatch({
         type: 'GET_ALL_RECIPES',
