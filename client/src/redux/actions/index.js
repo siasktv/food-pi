@@ -85,7 +85,14 @@ export function getNameRecipes(name) {
 export function getDiets() {
   return async function (dispatch) {
     try {
-      const info = await axios.get(`${url}/diets`)
+      const info = await axios.get(
+        ('https://food-pi-production-a75b.up.railway.app/diets',
+        {
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+          },
+        })
+      )
       return dispatch({
         type: 'GET_DIETS',
         payload: info.data,
@@ -99,7 +106,15 @@ export function getDiets() {
 export function postRecipe(payload) {
   return async function (dispatch) {
     try {
-      const response = axios.post(`${url}/recipes`, payload)
+      const response = axios.post(
+        ('https://food-pi-production-a75b.up.railway.app/recipes',
+        {
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+          },
+        }),
+        payload
+      )
       return response
     } catch (error) {
       console.log(error)
@@ -110,7 +125,14 @@ export function postRecipe(payload) {
 export function getDetail(id) {
   return async function (dispatch) {
     try {
-      const result = await axios.get(`${url}/recipes/` + id)
+      const result = await axios.get(
+        ('https://food-pi-production-a75b.up.railway.app/recipes/',
+        {
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+          },
+        }) + id
+      )
       return dispatch({
         type: 'GET_DETAILS',
         payload: result.data,
