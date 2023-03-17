@@ -2,14 +2,19 @@ import axios from 'axios'
 import url from '../api'
 //
 
+console.log(url)
+
 export function getAllRecipes() {
   return async (dispatch) => {
     try {
-      const response = await axios.get(`${url}/recipes`, {
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-        },
-      })
+      const response = await axios.get(
+        'https://food-pi-production-a75b.up.railway.app/recipes',
+        {
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+          },
+        }
+      )
       console.log(response)
       return dispatch({
         type: 'GET_ALL_RECIPES',
