@@ -25,7 +25,7 @@ const ip = '0.0.0.0'
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen(port, ip, () => {
-    console.log(`Server running at http://${ip}:${port}/`) // eslint-disable-line no-console
+  server.listen(port, () => {
+    console.log(`Server raised in port ${port}`) // eslint-disable-line no-console
   })
 })
